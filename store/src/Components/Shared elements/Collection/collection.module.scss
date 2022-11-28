@@ -1,0 +1,68 @@
+@import '../../../Style/Style.scss';
+
+.colection {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+
+    .content {
+        width: 80%;
+
+        .title {
+            color: $main-text-collor;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .preview {
+            display: flex;
+
+            .carusel {
+                position: relative;
+                width: 100%;
+                height: 100%;
+
+                .card {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    object-fit: cover;
+                    transition: 500ms;
+                    opacity: 0;
+                }
+
+                .center {
+                    opacity: 1;
+                    transform: scale(1);
+                    z-index: 99;
+                }
+
+                .left {
+                    transform: translateX(-125%) scale(0.8);
+                    transition: 500ms;
+                    opacity: 0;
+                }
+
+                .right {
+                    transform: translateX(-125%) scale(0.8);
+                    transition: 500ms;
+                    opacity: 0;
+                }
+
+                .more {
+                    position: relative;
+                    bottom: 40px;
+                    left: 30px;
+                    width: 200px;
+                    height: 60px;
+                    padding: 5px 10px;
+                    font-size: 18px;
+                    color: $main-text-collor;
+                    background: rgba(19, 56, 47, 0.85);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+@import '../../../Style/Style.scss';
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: $footer-background;
+
+    .content {
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        color: $main-text-collor;
+        margin: 35px 0px 50px 0px;
+
+        .location {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 24px;
+           
+            span {
+                color: $footer-text-collor;
+                padding-top: 10px;
+                font-size: 20px;
+            }
+        }
+
+        .social {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 24px;
+
+            .socialIcon {
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+
+                span {
+                    padding: 0px 5px;
+                }
+            }
+
+        }
+
+
+        .contacts {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 24px;
+
+            .number {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 10px;
+                font-size: 20px;
+                color: $footer-text-collor;
+            }
+        }
+    }
+}

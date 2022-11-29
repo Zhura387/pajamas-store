@@ -1,16 +1,17 @@
 import React from 'react';
 import s from './header.module.scss'
+import { Link } from 'react-router-dom'
 const Header = () => {
     return (
         <header className={s.header}>
             <div className={s.content}>
             <div>
-                <h className={s.logo}>Emerald.by</h>
+                <h className={s.logo}> <Link to="/">Emerald.by</Link></h>
             </div>
             <div className={s.infoBlock}>
             <div>
                 <ul className={s.info}>
-                    <li>product</li>
+                    <li><Link to="Catalog">product</Link></li>
                     <li>contact</li>
                     <li>about us</li>
                 </ul>

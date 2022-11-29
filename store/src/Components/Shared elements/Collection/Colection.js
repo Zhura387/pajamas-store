@@ -1,5 +1,6 @@
 import React from 'react';
 import s from './collection.module.scss'
+import { Link } from 'react-router-dom'
 
 const Colection = () => {
     const [index, setIndex] = React.useState(0);
@@ -36,7 +37,7 @@ const Colection = () => {
                         {cards.map((item, i) => {
                             const indexLeft = mod(index + 1, cards.length)
                             const indexRight = mod(index + 1, cards.length)
-                            let className = ''; 
+                            let className = '';
                             if (i === index) {
                                 className = s.center
                             } else if (i === indexLeft) {
@@ -44,13 +45,13 @@ const Colection = () => {
                             } else if (i === indexRight) {
                                 className = s.right
                             } else {
-                                className=s.card
+                                className = s.card
                             }
                             return <img key={item.id} src={item.Image} alt='collect' className={className} />
                         })}
-                    
-                            <span className={s.more}>more...</span>
-                        
+
+                        <span className={s.more}><Link to="NewCollection">more...</Link></span>
+
                     </div>
                 </div>
             </div>

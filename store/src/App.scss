@@ -1,5 +1,14 @@
 @import './Style/Style.scss';
 
+*a{
+  text-decoration:none;
+  color: inherit;
+}
+*a:visited, a:hover, a:active {
+  color: inherit;
+}
+
+
 body{
   background-color: $main-background;
 }

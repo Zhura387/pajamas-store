@@ -1,0 +1,53 @@
+@import '../../../Style/Style.scss';
+
+.quality {
+    color: $main-text-collor;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+
+    .wrapper {
+        width: 60%;
+
+        h4 {
+            text-align: center;
+            margin: 0px 0px 40px 0px;
+            font-size: 28px;
+            color: $logo-collor;
+        }
+
+        .block1 {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+
+            .block1Text {
+                width: 60%;
+            }
+
+            ul {
+                font-size: 16px;
+            }
+
+            .img {
+                align-self: flex-end;
+            }
+        }
+
+        .block2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .block3 {
+
+            h5 {
+                font-size: 25px;
+                margin: 20px 0px 40px 0px;
+                text-align: center;
+            }
+        }
+    }
+}

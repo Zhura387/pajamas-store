@@ -1,0 +1,52 @@
+@import '../../../Style/Style.scss';
+
+
+.Wrapp {
+    display: flex;
+    justify-content: center;
+
+    .contentWrapper {
+
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+
+        .mainText {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+
+            div {
+                width: 40%;
+                color: $main-text-collor;
+            }
+
+        }
+
+        .infoBlock {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                span {
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                    color: $main-text-collor;
+                }
+
+                a:hover {
+                    transform: scale(1.1);
+                    transition: 300ms;
+                }
+            }
+        }
+    }
+}

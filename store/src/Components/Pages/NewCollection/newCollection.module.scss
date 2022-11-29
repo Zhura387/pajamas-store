@@ -1,0 +1,41 @@
+@import '../../../Style/Style.scss';
+
+.newCollection {
+    color: $main-text-collor;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+
+    .wrapper {
+        width: 60%;
+
+        h4 {
+            text-align: center;
+            margin: 40px 0px 40px 0px;
+            font-size: 28px;
+            color: $logo-collor;
+        }
+
+        .block1 {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            align-items: center;
+        }
+
+        .block2 {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            align-items: center;
+
+        }
+
+        .block3 {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            align-items: center;
+        }
+    }
+}

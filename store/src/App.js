@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.scss';
-import MainPage from './Components/Pages/MainPage/MainPage';
+import Menu from './Components/Pages/Menu/Menu';
 
 function App() {
   return (
     <div className="App">
-<MainPage/>
+      <Menu />
     </div>
   );
 }

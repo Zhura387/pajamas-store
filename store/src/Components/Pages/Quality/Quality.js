@@ -1,9 +1,15 @@
 import React from 'react';
 import s from './quality.module.scss'
+import { useNavigate } from 'react-router-dom'
 const Quality = () => {
+    const navigate = useNavigate()
+    const Back = () => {
+        navigate(-1)
+    }
     return (
         <div className={s.quality}>
             <div className={s.wrapper}>
+                <button className={s.btnBack} onClick={Back}>Go Back</button>
                 <h4>quality</h4>
                 <div className={s.block1}>
                     <div className={s.block1Text}>

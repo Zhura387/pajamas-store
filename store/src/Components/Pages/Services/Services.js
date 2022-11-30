@@ -1,9 +1,15 @@
 import React from 'react';
 import s from './services.module.scss'
+import { useNavigate } from 'react-router-dom'
 const Services = () => {
+    const navigate = useNavigate()
+    const Back = () => {
+        navigate(-1)
+    }
     return (
         <div className={s.services}>
             <div className={s.wrapper}>
+                <button className={s.btnBack} onClick={Back}>Go Back</button>
                 <h4>Services</h4>
                 <div className={s.block1}>
                     <div>1. We will find the perfect suit for you, with our experts</div>

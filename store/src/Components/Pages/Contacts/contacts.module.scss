@@ -1,17 +1,15 @@
 @import '../../../Style/Style.scss';
 
-.services {
-    font-size: 20px;
-    color: $main-text-collor;
-    margin-bottom: 40px;
+.contacts {
     display: flex;
     justify-content: center;
 
     .wrapper {
         width: 60%;
-        margin-top: 20px;
+        margin: 50px 0px;
 
         .btnBack {
+
             float: right;
             font-size: 14px;
             background: none;
@@ -23,21 +21,6 @@
             transform: scale(1.1);
             cursor: pointer;
             transition: 300ms;
-        }
-
-        h4 {
-            text-align: center;
-            margin: 20px 0px 20px 0px;
-            font-size: 28px;
-            color: $logo-collor;
-        }
-
-        .block1 {
-            margin-bottom: 20px;
-        }
-
-        .block2 {
-            margin-bottom: 20px;
         }
     }
 }

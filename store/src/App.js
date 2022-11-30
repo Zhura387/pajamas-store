@@ -5,7 +5,9 @@ import Menu from './Components/Pages/Menu/Menu';
 function App() {
   return (
     <div className="App">
-      <Menu />
+      <div className="Wrapp">
+        <Menu />
+      </div>
     </div>
   );
 }

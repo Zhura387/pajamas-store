@@ -1,0 +1,59 @@
+@import '../../../Style/Style.scss';
+
+.cardWrapper {
+    display: flex;
+    justify-content: center;
+
+    .cardContent {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+
+        .card {
+            background-color: #365A52;
+            border-radius: 10px;
+            width: 240px;
+            height: 270px;
+            margin: 20px 6px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+color:$main-text-collor;
+            .like {
+                margin: 10px;
+                margin-right: auto;
+
+                img {
+                    height: 18px;
+                }
+            }
+
+            .img {
+                width: 156px;
+                height: 125px;
+            }
+
+            .modal {
+                margin: 5px 0 0px 0;
+            }
+
+            .price {
+                margin: 5px 0px 0px 0px;
+            }
+
+            .color {
+                margin: 0px;
+            }
+
+            .plus {
+                
+margin-left: auto;
+                img {
+                    height: 18px;
+                    margin:0 10px 10px 0;
+                    position: relative;
+                }
+            }
+        }
+    }
+}
